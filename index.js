@@ -16,11 +16,7 @@ app.get("/api/penguins", (req, res)=>{
     res.send(JSON.stringify(penguins));
 })
 
-app.get("/api/bears", (req, res)=>{
-    //return dummy data
-    const bears = ["fact1", "fact2", "fact3", "fact4", "fact5", "fact6", "fact7", "fact8", "fact9", "fact10"];
-    res.send(JSON.stringify(bears));
-})
+
 
 //running the express http server on port we specified
 app.listen(port, ()=>{
